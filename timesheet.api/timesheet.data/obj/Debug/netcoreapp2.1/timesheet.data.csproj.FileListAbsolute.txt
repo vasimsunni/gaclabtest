@@ -1,0 +1,15 @@
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.data.deps.json
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.data.runtimeconfig.json
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.data.runtimeconfig.dev.json
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.data.dll
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.data.pdb
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.model.dll
+E:\GAC\timesheet.api\timesheet.data\bin\Debug\netcoreapp2.1\timesheet.model.pdb
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.csprojAssemblyReference.cache
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.AssemblyInfoInputs.cache
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.AssemblyInfo.cs
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.csproj.CoreCompileInputs.cache
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.csproj.CopyComplete
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.dll
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.pdb
+E:\GAC\timesheet.api\timesheet.data\obj\Debug\netcoreapp2.1\timesheet.data.genruntimeconfig.cache

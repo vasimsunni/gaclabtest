@@ -1,0 +1,119 @@
+<section id="contact" class="main-content mb-5"><!-- ptb-100 bg-F7F5F4-->
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="card">
+                  <div class="card-header">
+                      <h4 class="card-title text-center text-danger">Top News</h4>
+                  </div>
+                  <div class="card-content">
+                      <div class="card-body">
+                          <div class="col-md-12">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <h3>{{topNews.title}}</h3>
+                                  </div>
+
+                                  <div class="col-md-8">
+                                    <span>{{topNews.description}}</span>
+                                  </div>
+                                  <div class="col-md-4 text-right text-mute">
+                                    <span class="text-mute">{{topNews.author}}</span>
+                                  </div>
+                              </div>
+
+                              <div class="row mt-5">
+                                  <div class="col-md-12">
+                                    <button class="btn btn-primary" (click)="addNewsModalOpen(newsModal)">Add News</button>
+                                  </div>
+                              </div>
+
+                              <div class="table-responsive mt-5">
+                                <table datatable [dtOptions]="dtOptions" class="table table-striped table-niverse table-hover" *ngIf="isLoaded">
+                                  <thead>
+                                    <tr>
+                                      <th>Operator Name</th>
+                                      <th>Country</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let item of news">
+                                      <td>
+                                        <a href="javascript:;">{{item.title}}</a>
+                                      </td>
+                                      <td>{{item.author}}</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<ng-template #newsModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">News</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #f="ngForm" class="form" autocomplete="off">
+            <div class="form-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="operatorName">Title*</label>
+                    <input type="text" id="title" class="form-control border-primary" [(ngModel)]="newsModel.title" name="title" #title="ngModel" required>
+                    <div *ngIf="title?.invalid && (title?.dirty || title?.touched)" class="form-text danger">
+                        <div *ngIf="title?.errors.required">Title is required</div>
+                     </div>
+                  </div>
+                </div>
+
+               <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="countryId">Category*</label>
+                    
+                    <ng-select bindLabel="name" class="form-control"
+                    placeholder="Select category"
+                    [searchable]="true" 
+                    [clearable]="true"
+                    name="author"
+                    [(ngModel)]="newsModel.author" ngModel>
+                        <ng-option [value]="item.author" *ngFor="let item of news">
+                            {{item.author}}
+                        </ng-option>
+                    </ng-select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="operatorName">Date*</label>
+                      <input type="date" id="date" class="form-control border-primary" [(ngModel)]="newsDate" name="date" #date="ngModel" required>
+                      <div *ngIf="date?.invalid && (date?.dirty || date?.touched)" class="form-text danger">
+                          <div *ngIf="date?.errors.required">Date is required</div>
+                       </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+
+            <div class="form-actions text-right">
+                <button type="button" class="btn btn-raised btn-primary mr-2"  (click)="saveNews()" [disabled]="!f.form.valid"> Save  </button>
+                <button type="button" class="btn btn-raised btn-warning mr-1" (click)="modal.close('Save click')"> Close </button>
+            </div>
+          </form>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+      </div> -->
+</ng-template>
+
+

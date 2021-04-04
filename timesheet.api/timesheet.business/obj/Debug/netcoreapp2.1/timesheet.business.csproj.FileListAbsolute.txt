@@ -1,0 +1,14 @@
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.business.deps.json
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.business.dll
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.business.pdb
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.data.dll
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.model.dll
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.data.pdb
+E:\GAC\timesheet.api\timesheet.business\bin\Debug\netcoreapp2.1\timesheet.model.pdb
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.csprojAssemblyReference.cache
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.AssemblyInfoInputs.cache
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.AssemblyInfo.cs
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.csproj.CoreCompileInputs.cache
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.csproj.CopyComplete
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.dll
+E:\GAC\timesheet.api\timesheet.business\obj\Debug\netcoreapp2.1\timesheet.business.pdb
